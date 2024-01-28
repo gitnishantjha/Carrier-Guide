@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  type="text/css"  href="CSS/servey.css">
+</head>
+<body>
+    <form id="myform">
+        <div class="quiz-container" id="quiz">
+            <div class="quiz-header">
+                <h2 id="question">If you could have any job in the world what would it be?</h2>
+                <textarea id="feedback" name="feedback" rows="2" cols="20"></textarea><br><br>
+            </div>
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+        <!-- <form id="myForm">
+         
+            <input type="submit" value="Submit">
+        </form> -->
+    
+        <script>
+            // JavaScript code to open a new page after form submission
+            document.getElementById("myform").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent the default form submission behavior
+    
+                // Open a new page using window.open
+                window.open("three.html", "_blank"); // Change "new_page.html" to the URL of the page you want to open
+            });
+        </script>
+    
+</body>
+</html>
